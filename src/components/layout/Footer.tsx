@@ -32,7 +32,7 @@ export default function Footer() {
                         The Binder
                     </p>
                     <p className="text-xs max-w-lg md:max-w-3xl mt-4 md:mt-6 text-ink-soft">
-                        The Binder is a fan-made, non-commercial reference site and is not affiliated with, endorsed by, or sponsored by Nintendo, The Pokémon Company, Bandai, or Shueisha. Pokémon and One Piece are trademarks of their respective owners
+                        The Binder is a fan-made, non-commercial reference site and is not affiliated with, endorsed by, or sponsored by Nintendo, The Pokémon Company, Bandai, GameFreak, or Shueisha. Pokémon and One Piece are trademarks of their respective owners
                     </p>
                 </div>
             </Container>
