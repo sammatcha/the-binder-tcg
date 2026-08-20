@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 export default function Button({ href, onClick, variant = "primary", children, className = "", }: ButtonProps) {
-  const base = "inline-block px-3 py-2 md:px-5 md:py-3 rounded-lg text-sm font-semibold item-center  ";
+  const base = "inline-block px-3 py-2 md:px-5 md:py-3 rounded-lg text-sm font-semibold   ";
   const styles =
     variant === "primary"
       ? "bg-accent-2 text-bg hover:bg-accent-2/70 border border-line "

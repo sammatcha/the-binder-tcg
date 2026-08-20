@@ -18,7 +18,7 @@ export default function NavBar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-base text-ink-soft"
+                            className="text-base md:text-lg  "
                         >
                             {link.name}
                         </Link>

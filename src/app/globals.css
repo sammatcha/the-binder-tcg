@@ -11,6 +11,7 @@
   --accent-2: #F2A65A;
   --ink: #EFF3E8;
   --ink-soft: #A9B5A0;
+  --ink-muted: #94A3B8;
   --gold: #D3A94F;
   --line: #3A4C31;
 }
@@ -26,6 +27,7 @@
   --color-accent-2: var(--accent-2);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
   --color-gold: var(--gold);
   --color-line: var(--line);
   --font-sans: var(--font-geist-sans);

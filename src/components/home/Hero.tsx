@@ -8,7 +8,7 @@ export default function HeroSection(){
                 <div
                     className="pointer-events-none bg-[url('/image/bg-1.png')] bg-no-repeat absolute -bottom-10 right-0 w-[20rem] h-[18rem] bg-contain bg-bottom-right md:h-[min(100%,32rem)] md:w-[min(48vw,36rem)]"
                 />
-                <div className="relative max-w-xl">
+                <div className="relative ">
                     <h1 className="text-4xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">Your guide to
                         <br/>
                         <span className="text-accent-2">every set.</span>
@@ -16,7 +16,7 @@ export default function HeroSection(){
                     <div className="mt-3 md:mt-4 text-base text-ink md:text-lg">
                         <p>Your stop to card lists, guides, and release dates</p>
                     </div>
-                    <div className="mt-6 flex gap-4 md:mt-8">
+                    <div className="mt-6 flex flex-row gap-3 md:gap-6 md:mt-8">
                         <Button href="/pokemon">Browse Pokemon</Button>
                         <Button variant="ghost" href="/one-piece">Browse One Piece</Button>
                     </div>
