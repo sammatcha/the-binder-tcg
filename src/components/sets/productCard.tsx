@@ -4,7 +4,7 @@ type ShotsProps = {
     frontSrc: string;
     backSrc?: string;
     promoSrc?: string;
-    label: string;
+    label?: string;
     priority?: boolean;
     className?: string;
 };
@@ -23,13 +23,13 @@ function Shot({
     priority?: boolean;
 }) {
     return (
-        <div className="relative aspect-square w-full overflow-hidden border border-line bg-[#1a2438]">
+        <div className="relative aspect-square min-w-0 w-full overflow-hidden border border-line bg-[#1a2438]">
             <Image
                 src={src}
                 alt={alt}
                 fill
-                sizes="(min-width: 768px) 40vw, 90vw"
-                className="object-contain p-3"
+                sizes="(min-width: 768px) 40vw, 50vw"
+                className="object-contain p-2 md:p-3"
                 priority={priority}
             />
         </div>
@@ -60,7 +60,7 @@ export function ProductShots({
 
     return (
         <div
-            className={`grid gap-3 md:gap-4 ${multiple ? "grid-cols-2" : ""} ${className}`}
+            className={`grid min-w-0 gap-2 sm:gap-3 md:gap-4 ${multiple ? "grid-cols-2" : ""} ${className}`}
         >
             {shots.map((shot) => (
                 <Shot
@@ -85,9 +85,9 @@ export default function ProductCard({
     const label = name ?? "Product";
 
     return (
-        <article className={className}>
+        <article className={`min-w-0 ${className}`}>
             {name ? (
-                <h3 className="text-base font-semibold tracking-tight text-ink md:text-lg">
+                <h3 className="text-sm font-semibold leading-snug tracking-tight text-ink sm:text-base md:text-lg">
                     {name}
                 </h3>
             ) : null}
@@ -97,7 +97,7 @@ export default function ProductCard({
                 promoSrc={promoSrc}
                 label={label}
                 priority={priority}
-                className={name ? "mt-4" : ""}
+                className={name ? "mt-3 md:mt-4" : ""}
             />
         </article>
     );
